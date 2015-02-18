@@ -11,6 +11,7 @@ import me.prettyprint.hector.api.query.QueryResult;
 import me.prettyprint.hector.api.query.RangeSlicesQuery;
 import org.cassandraunit.dataset.DataSetFileExtensionEnum;
 import org.hamcrest.Matchers;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -34,11 +35,13 @@ import static org.junit.Assert.assertThat;
 @EmbeddedCassandra(port = 9171)
 public class CassandraStartAndLoadWithYAML3DatasetAnnotationTest {
 
+    @Ignore
   @Test
   public void should_work() throws Exception {
     test();
   }
 
+    @Ignore
   @Test
   public void should_work_twice() throws Exception {
     test();
